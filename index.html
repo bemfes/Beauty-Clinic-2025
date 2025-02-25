@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ИЗМЕНИ НАЗВАНИЯ СТИЛЕЙ И СКРИПТА НА MIN ПОТОМ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/simplebar.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/simplebar.min.js"></script>
+    <script defer src="js/just-validate.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <title>Luxe Derm</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicon.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="description" content="At LuxeDerm, we're dedicated to enhancing your natural beauty and boosting self-confidence. Founded by experienced professionals, our commitment to excellence has made us a trusted destination for skincare, makeup, and wellness.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://nachivot.ru">
+    <meta property="og:image" content="images/girl-first.png">
+    <meta property="og:title" content="LuxeDerm | Beauty Clinic">
+    <meta property="og:description" content="At LuxeDerm, we're dedicated to enhancing your natural beauty and boosting self-confidence. Founded by experienced professionals, our commitment to excellence has made us a trusted destination for skincare, makeup, and wellness.">
+    
+</head>
+<body class="no-scroll">
+    <div class="preloader">
+        <div class="preloader__content">
+            <div class="preloader__circle"></div>
+        </div>
+    </div>
+
+
+    <div class="overlay__send"></div>
+    <div class="gif__box gif__box_hidden">
+        <img src="images/loading-gif.gif" class="gif" alt="">
+    </div>
+    <div class="overlay"></div>
+    <div class="search__box search__box_hidden">
+        <div class="search__content">
+            <input type="text" placeholder="Search..." class="search__input">
+        </div>
+    </div>
+    <section class="first-section">
+        <div class="first-section__main container-first">
+            <div class="first-section__left">
+                <div class="first-section__icons">
+                    <a href="https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%BC%D0%BC" class="first-section__icon-link"><img src="icons/insta.svg" alt="" class="first-section__icon"></a>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D0%BD%D1%8F%D1%8F_%D0%BF%D1%82%D0%B8%D1%86%D0%B0" class="first-section__icon-link"><img src="icons/twitter (1).svg" alt="" class="first-section__icon"></a>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D1%86%D0%BE" class="first-section__icon-link"><img src="icons/facebook (2).svg" alt="" class="first-section__icon"></a>
+                </div>
+            </div>
+            <div class="first-section__right ">
+                <div class="first-section__right-top">
+                    <div class="first-section__right-top-left">
+                        <a class="logo logo_big" href="#">Luxederm</a>
+                        <div class="play__position">
+                            <div  class="shadow shadow_circle shadow_circle-play">
+                                <div tabindex="0" class="play__circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first-section__right-top-right">
+                        <header class="first-section__header header">
+                            <div class="overlay_menu"></div>
+                            <div class="logo__box">
+                                <a class="logo logo_big" href="#">Luxederm</a>
+                            </div>
+                            <nav class="nav first-section__nav">
+                                <div class="hamburger">
+                                    <span class="hamburger__span"></span>
+                                    <span class="hamburger__span"></span>
+                                    <span class="hamburger__span"></span>
+                                </div>
+                                
+                                <ul class="nav__list first-section__nav-list">
+                                    <li class="first-section__nav-close">&#10006;</li>
+                                    <li class="nav__item first-section__nav-item"><a class="nav__item-link" href="#services">Services</a></li>
+                                    <li class="nav__item first-section__nav-item"><a class="nav__item-link" href="#blog">Blog</a></li>
+                                    <li class="nav__item first-section__nav-item"><a class="nav__item-link" href="#contact">Contact Us</a></li>
+                                    <li class="nav__item first-section__nav-item"><a class="nav__item-link" href="#about">About Us</a></li>
+                                </ul>
+                            </nav>
+                            <div class="first-section__search-border">
+                                <button class="search__btn"><img src="icons/search-btn.svg" alt="" class="first-section__search search"></button>
+                            </div>
+                        </header>
+                        <div class="first-section__right-top-main">
+                            <div class="first-section__right-title-box">
+                                <h1 tabindex="0" class="first-section__title title-1">Window to <br>
+                                    Radiant Beauty and <br>
+                                    Confidence</h1>
+                            </div>
+                            <div class="first-section__stars">
+                                <img class="first-section__stars-big" src="icons/big-star.svg" alt="">
+                                <img class="first-section__stars-small" src="icons/small-star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="first-section__right-bottom">
+                    <div class="first-section__right-bottom-left">
+                        <picture>
+                            <source srcset="images/girl-first.webp" class="first-section__img-small" type="image/webp">
+                            <img src="images/girl-first.png" alt="" class="first-section__img-small">
+                        </picture>
+                        <p tabindex="0" class="first-section__text">Skin care isn't a luxury; it's your daily commitment to nurturing your unique beauty.</p>
+                        <div class="shadow shadow_btn shadow_btn-first-section">
+                            <button class="btn first-section__btn">Get In Touch</button>
+                        </div>
+                        <div class="first-section__clients clients">
+                            <div class="clients__icons">
+                                <div class="shadow shadow_circle">
+                                    <picture tabindex="0">
+                                        <source srcset="images/client-1.webp" class="clients__img" type="image/webp">
+                                        <img src="images/client-1.png" alt="" class="clients__img">
+                                    </picture>
+                                </div>
+                                <div class="shadow shadow_circle shadow_circle-client-2">
+                                    <picture tabindex="0">
+                                        <source srcset="images/client-2.webp" class="clients__img" type="image/webp">
+                                        <img src="images/client-2.png" alt="" class="clients__img">
+                                    </picture>
+                                </div>
+                                <div class="shadow shadow_circle shadow_circle-client-3">
+                                    <picture tabindex="0">
+                                        <source srcset="images/client-3.webp" class="clients__img" type="image/webp">
+                                        <img src="images/client-3.png" alt="" class="clients__img">
+                                    </picture>
+                                </div>
+                                <div class="shadow shadow_circle shadow_circle-client-4">
+                                    <picture tabindex="0">
+                                        <source srcset="images/client-1.webp" class="clients__img" type="image/webp">
+                                        <img src="images/client-1.png" alt="" class="clients__img">
+                                    </picture>
+                                </div>
+                            </div>
+                            <p tabindex="0" class="desc-2 desc-2_reg clients__text">5000+ Happy Clients</p>
+                        </div>
+                    </div>
+                    <div class="first-section__right-bottom-right">
+                        <picture>
+                            <source srcset="images/girl-first.webp" class="first-section__img" type="image/webp">
+                            <img src="images/girl-first.png" alt="" class="first-section__img">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ticker">
+            <ul class="ticker__list red">
+                <li class="ticker__list-item title-3">Enhance <span class="ticker__span">Beauty</span></li>
+                <li class="ticker__list-item title-3">Elevate <span class="ticker__span">Confidence</span></li>
+                <li class="ticker__list-item title-3">Enhance <span class="ticker__span">Beauty</span></li>
+                <li class="ticker__list-item title-3">Elevate <span class="ticker__span">Confidence</span></li>
+                <li class="ticker__list-item title-3">Enhance <span class="ticker__span">Beauty</span></li>
+                <li class="ticker__list-item title-3">Elevate <span class="ticker__span">Confidence</span></li>
+            </ul>
+            <ul class="ticker__list">
+                <li class="ticker__list-item title-3">Enhance <span class="ticker__span">Beauty</span></li>
+                <li class="ticker__list-item title-3">Elevate <span class="ticker__span">Confidence</span></li>
+                <li class="ticker__list-item title-3">Enhance <span class="ticker__span">Beauty</span></li>
+                <li class="ticker__list-item title-3">Elevate <span class="ticker__span">Confidence</span></li>
+                <li class="ticker__list-item title-3">Enhance <span class="ticker__span">Beauty</span></li>
+                <li class="ticker__list-item title-3">Elevate <span class="ticker__span">Confidence</span></li>
+            </ul>
+        </div>
+    </section>
+   <section class="second-section" id="about">
+    <div class="second-section__main container">
+        <div class="second-section__left">
+            <picture tabindex="0">
+                <source class="second-section__img" srcset="images/two-girls.webp" type="image/webp">
+                <img class="second-section__img" src="images/two-girls.png" alt="">
+            </picture>
+        </div>
+        <div class="second-section__right">
+            <h2 tabindex="0" class="title-3 second-section__title">Our Journey at LuxeDerm</h2>
+            <p tabindex="0" class="second-section__text desc-2 desc-2_reg">At LuxeDerm, we're dedicated to enhancing your natural beauty and boosting self-confidence. Founded by experienced professionals, our commitment to excellence has made us a trusted destination for skincare, makeup, and wellness.</p>
+            <ul class="second-section__list pluses">
+                <li tabindex="0" class="pluses__item desc-3 desc-3_reg"><span class="pluses__item-span desc-3">Years of Experience:</span>  Benefit from our years of industry experience.</li>
+                <li tabindex="0" class="pluses__item desc-3 desc-3_reg"><span class="pluses__item-span desc-3">Commitment to Excellence:</span>  We provide top-quality services.</li>
+                <li tabindex="0" class="pluses__item desc-3 desc-3_reg"><span class="pluses__item-span desc-3">Personalized Beauty Experiences:</span>  Empowering beauty tailored just for you.</li>
+            </ul>
+            <div class="shadow shadow_btn">
+                <button class="second-section__btn btn">Get In Touch</button>
+            </div>
+        </div>
+    </div>
+   </section>
+   <section class="third-section" id="services">
+    <div class="third-section__main container">
+        <div class="third-section__desc">
+            <h3 tabindex="0" class="title-2 third-section__title">Our Special Services</h3>
+            <p tabindex="0" class="third-section__text desc-1 desc-1_reg">Unlock exclusive beauty experiences with our limited-time promotions. Discover your path to radiant confidence. Explore now.</p>
+        </div>
+    </div>
+        <div class="special__overflow">
+            <div class="special" data-simplebar>
+                <div class="shadow shadow_special-item">
+                    <div class="special__item">
+                        <picture>
+                            <source class="special__item-img" srcset="images/service-1.webp" type="image/webp">
+                            <img src="images/service-1.png" alt="" class="special__item-img">
+                        </picture>
+                        <div class="special__item-desc">
+                            <p tabindex="0" class="desc-1 special__item-text">Facial Massage</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow shadow_special-item">
+                    <div class="special__item">
+                        <picture>
+                            <source class="special__item-img" srcset="images/service-2.webp" type="image/webp">
+                            <img src="images/service-2.png" alt="" class="special__item-img">
+                        </picture>
+                        <div class="special__item-desc">
+                            <p tabindex="0" class="desc-1 special__item-text">Hair Treatment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow shadow_special-item">
+                    <div class="special__item">
+                        <picture>
+                            <source class="special__item-img" srcset="images/service-3.webp" type="image/webp">
+                            <img src="images/service-3.png" alt="" class="special__item-img">
+                        </picture>
+                        <div class="special__item-desc">
+                            <p tabindex="0" class="desc-1 special__item-text">Eye Treatment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow shadow_special-item">
+                    <div class="special__item">
+                        <picture>
+                            <source class="special__item-img" srcset="images/service-4.webp" type="image/webp">
+                            <img src="images/service-4.png" alt="" class="special__item-img">
+                        </picture>
+                        <div class="special__item-desc">
+                            <p tabindex="0" class="desc-1 special__item-text">Hands massage</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow shadow_special-item">
+                    <div class="special__item">
+                        <picture>
+                            <source class="special__item-img" srcset="images/service-1.webp" type="image/webp">
+                            <img src="images/service-1.png" alt="" class="special__item-img">
+                        </picture>
+                        <div class="special__item-desc">
+                            <p tabindex="0" class="desc-1 special__item-text">Facial Massage</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow shadow_special-item">
+                    <div class="special__item">
+                        <picture>
+                            <source class="special__item-img" srcset="images/service-2.webp" type="image/webp">
+                            <img src="images/service-2.png" alt="" class="special__item-img">
+                        </picture>
+                        <div class="special__item-desc">
+                            <p tabindex="0" class="desc-1 special__item-text">Facial Massage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+   </section>
+   <section class="fourth-section">
+    <div class="fourth-section__main container">
+        <div class="fourth-section__left">
+            <div  class="slider-big__main-arrow slider-big__main-arrow_left"></div>
+            <div class="fourth-section__slider slider-big">
+                <div class="slider-big__wrapper">
+                    <div class="shadow shadow_slider-big-item">
+                        <div class="slider-big__item">
+                            <div class="slider-big__arrow"></div>
+                            <picture>
+                                <source srcset="images/before-after.webp" class="slider-big__img" type="image/webp">
+                                <img src="images/before-after.png" alt="" class="slider-big__img">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="shadow shadow_slider-big-item">
+                        <div class="slider-big__item">
+                            <div class="slider-big__arrow"></div>
+                            <picture>
+                                <source srcset="images/before-after.webp" class="slider-big__img" type="image/webp">
+                                <img src="images/before-after.png" alt="" class="slider-big__img">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="shadow shadow_slider-big-item">
+                        <div class="slider-big__item">
+                            <div class="slider-big__arrow"></div>
+                            <picture>
+                                <source srcset="images/before-after.webp" class="slider-big__img" type="image/webp">
+                                <img src="images/before-after.png" alt="" class="slider-big__img">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-big__main-arrow slider-big__main-arrow_right"></div>
+        </div>
+        <div class="fourth-section__right">
+            <h4 tabindex="0" class="title-3 fourth-section__title">Before and After Transformations</h4>
+            <p tabindex="0" class="desc-2 desc-2_reg fourth-section__text">At LuxeDerm, we believe in the power of transformation. Our commitment to enhancing natural beauty and confidence is exemplified through the remarkable before and after results achieved by our clients. <br>
+                Insert a grid of before and after photos showcasing the stunning transformations of your clients. <br>
+                These images serve as a testament to the expertise and dedication of our team. We take pride in helping our clients achieve their beauty goals and unlock their true radiance.</p>
+            <div class="numbers">
+                <div class="shadow shadow_numbers-item">
+                    <div class="numbers__item">
+                        <p tabindex="0" class="numbers__text desc-2 desc-2_reg"><span class="numbers__span desc-1">+10</span> <br> Years of Experience</p>
+                    </div>
+                </div>
+                <div class="shadow shadow_numbers-item">
+                    <div class="numbers__item">
+                        <p tabindex="0" class="numbers__text desc-2 desc-2_reg"><span class="numbers__span desc-1">+200</span> <br> Expert Doctors</p>
+                    </div>
+                </div>
+                <div class="shadow shadow_numbers-item">
+                    <div class="numbers__item">
+                        <p tabindex="0" class="numbers__text desc-2 desc-2_reg"><span class="numbers__span desc-1">+5000</span> <br> Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <section class="fifth-section">
+    <div class="fifth-section__main container">
+        <div class="fifth-section__desc">
+            <h5 tabindex="0" class="title-3 fifth-section__title">Testimonial</h5>
+        </div>
+        <div class="slider fifth-section__slider swiper-container">
+            <div class="swiper-wrapper">
+                <div class="shadow shadow_slider-item swiper-slide">
+                    <div class="slider__all-item">
+                        <div class="slider__img-holder">
+                                <div class="shadow shadow_circle">
+                                    <picture>
+                                        <source srcset="images/test-1.webp" type="image/webp" class="slider__img">
+                                        <img src="images/test-1.png" alt="" class="slider__img">
+                                    </picture>
+                                </div>
+                        </div>
+                        <div class="slider__small-item">
+                            <p class="slider__text desc-2">I've been a loyal client of LuxeDerm for years, and their skincare and makeup services are top-notch. It's my go-to place for beauty!</p>
+                            <p class="slider__author desc-3">Sarah K / <span class="desc-3 desc-3_reg">Facial Massage</span></p>
+                        </div>
+                        </div>
+                </div>
+                
+                <div class="shadow shadow_slider-item swiper-slide">
+                        <div class="slider__all-item">
+                            <div class="slider__img-holder">
+                                    <div class="shadow shadow_circle">
+                                        <picture>
+                                            <source srcset="images/test-2.webp" type="image/webp" class="slider__img">
+                                            <img src="images/test-2.png" alt="" class="slider__img">
+                                        </picture>
+                                    </div>
+                            </div>
+                            <div class="slider__small-item">
+                                <p class="slider__text desc-2">The team at LuxeDerm is exceptional. Their expertise shows in every service. I always trust them completely with my skincare needs!</p>
+                                <p class="slider__author desc-3">Michaela R / <span class="desc-3 desc-3_reg">Facial Massage</span></p>
+                            </div>
+                            </div>
+                </div>
+                
+                <div class="swiper-slide shadow shadow_slider-item ">
+                            <div class="slider__all-item">
+                                <div class="slider__img-holder">
+                                        <div class="shadow shadow_circle">
+                                            <picture>
+                                                <source srcset="images/test-3.webp" type="image/webp" class="slider__img">
+                                                <img src="images/test-3.png" alt="" class="slider__img">
+                                            </picture>
+                                        </div>
+                                </div>
+                                <div class="slider__small-item">
+                                    <p class="slider__text desc-2">LuxeDerm is my beauty haven. From massages to makeup, they never disappoint. I leave feeling confident every time.</p>
+                                    <p class="slider__author desc-3">Jessica M / <span class="desc-3 desc-3_reg">Facial Massage</span></p>
+                                </div>
+                                </div>
+                </div>
+
+                <div class="swiper-slide shadow shadow_slider-item">
+                                <div class="slider__all-item">
+                                    <div class="slider__img-holder">
+                                            <div class="shadow shadow_circle">
+                                                <picture>
+                                                    <source srcset="images/test-1.webp" type="image/webp" class="slider__img">
+                                                    <img src="images/test-1.png" alt="" class="slider__img">
+                                                </picture>
+                                            </div>
+                                    </div>
+                                    <div class="slider__small-item">
+                                        <p class="slider__text desc-2">I've been a loyal client of LuxeDerm for years, and their skincare and makeup services are top-notch. It's my go-to place for beauty!</p>
+                                        <p class="slider__author desc-3">Sarah K / <span class="desc-3 desc-3_reg">Facial Massage</span></p>
+                                    </div>
+                                    </div>
+                </div>
+                <div class="swiper-slide shadow shadow_slider-item">
+                    <div class="slider__all-item">
+                        <div class="slider__img-holder">
+                                <div class="shadow shadow_circle">
+                                    <picture>
+                                        <source srcset="images/test-2.webp" type="image/webp" class="slider__img">
+                                        <img src="images/test-2.png" alt="" class="slider__img">
+                                    </picture>
+                                </div>
+                        </div>
+                        <div class="slider__small-item">
+                            <p class="slider__text desc-2">The team at LuxeDerm is exceptional. Their expertise shows in every service. I always trust them completely with my skincare needs</p>
+                            <p class="slider__author desc-3">Michaela R / <span class="desc-3 desc-3_reg">Facial Massage</span></p>
+                        </div>
+                        </div>
+                    </div>
+                <div class="swiper-slide shadow shadow_slider-item">
+                    <div class="slider__all-item">
+                        <div class="slider__img-holder">
+                                <div class="shadow shadow_circle">
+                                    <picture>
+                                        <source srcset="images/test-3.webp" type="image/webp" class="slider__img">
+                                        <img src="images/test-3.png" alt="" class="slider__img">
+                                    </picture>
+                                </div>
+                        </div>
+                        <div class="slider__small-item">
+                            <p class="slider__text desc-2">LuxeDerm is my beauty haven. From massages to makeup, they never disappoint. I leave feeling confident every time.</p>
+                            <p class="slider__author desc-3">Jessica M / <span class="desc-3 desc-3_reg">Facial Massage</span></p>
+                        </div>
+                        </div>
+                </div>
+                <div class="swiper-slide shadow shadow_slider-item">
+                    <div class="slider__all-item">
+                        <div class="slider__img-holder">
+                                <div class="shadow shadow_circle">
+                                    <picture>
+                                        <source srcset="images/test-1.webp" type="image/webp" class="slider__img">
+                                        <img src="images/test-1.png" alt="" class="slider__img">
+                                    </picture>
+                                </div>
+                        </div>
+                        <div class="slider__small-item">
+                            <p class="slider__text desc-2">I've been a loyal client of LuxeDerm for years, and their skincare and makeup services are top-notch. It's my go-to place for beauty!</p>
+                            <p class="slider__author desc-3">Sarah K / <span class="desc-3 desc-3_reg">Facial Massage</span></p>
+                        </div>
+                        </div>
+                </div>
+                
+            </div>
+            <div class="swiper-pagination"></div>    
+            </div>
+        </div>
+   </section>
+   <section class="sixth-section">
+    <div class="sixth-section__main container">
+        <h5 tabindex="0" class="title-2 sixth-section__title">Explore Our Special Offers</h5>
+        <p tabindex="0" class="desc-1 desc-1_reg sixth-section__text">Unlock exclusive beauty experiences with our limited-time promotions. Discover your path to radiant confidence. Explore now.</p>
+        <div class="offers">
+        
+        <div class="shadow shadow_offers-item">
+            <div class="offers__item">
+                <picture tabindex="0">
+                    <source srcset="images/offer-1.webp" type="image/webp" class="offers__img">
+                    <img src="images/offer-1.png" alt="" class="offers__img">
+                </picture>
+                <div class="offers__desc">
+                    <p tabindex="0" class="offers__title title-4">Professional</p>
+                    <p tabindex="0" class="offers__text desc-3 desc-3_reg">Glowing Skin Membership</p>
+                    <div class="offers__pluses">
+                        <ul class="offers__list">
+                            <li tabindex="0" class="offers__list-item desc-3 desc-3_reg">Monthly facial treatment</li>
+                            <li tabindex="0" class="offers__list-item desc-3 desc-3_reg">Priority appointment scheduling</li>
+                            <li tabindex="0" class="offers__list-item desc-3 desc-3_reg">10% discount on skincare products</li>
+                        </ul>
+                        <p tabindex="0" class="offers__ideal desc-3 desc-3_reg"><span class="offers__ideal-span desc-3">Ideal for:</span> Clients looking for regular skincare maintenance and occasional makeup services</p>
+                    </div>
+                    <p tabindex="0" class="offers__price title-2">$199</p>
+                    <div class="shadow shadow_btn shadow__offers-btn">
+                        <button class="offers__btn btn">Get In Touch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shadow shadow_offers-item">
+            <div class="offers__item">
+                
+                <picture tabindex="0">
+                    <source srcset="images/offer-2.webp" type="image/webp" class="offers__img">
+                    <img src="images/offer-2.png" alt="" class="offers__img">
+                </picture>
+                
+                <div class="offers__desc">
+                    <p tabindex="0" class="offers__title title-4">Advanced</p>
+                    <p tabindex="0" class="offers__text desc-3 desc-3_reg">Total Beauty Transformation Package</p>
+                    <div class="offers__pluses">
+                        <ul class="offers__list">
+                            <li tabindex="0" class="offers__list-item desc-3 desc-3_reg">Three months of personalized skincare treatments</li>
+                            <li tabindex="0" class="offers__list-item desc-3 desc-3_reg">Unlimited makeup application for special occasions</li>
+                            <li tabindex="0" class="offers__list-item desc-3 desc-3_reg">Complimentary skincare product starter kit</li>
+                            <li tabindex="0" class="offers__list-item desc-3 desc-3_reg">Priority appointment scheduling</li>
+                        </ul>
+                        <p tabindex="0" class="offers__ideal desc-3 desc-3_reg"><span class="offers__ideal-span desc-3">Ideal for:</span> Clients committed to a comprehensive skincare and makeup transformation.</p>
+                    </div>
+                    <p tabindex="0" class="offers__price title-2">$499</p>
+                    <div class="shadow shadow_btn shadow__offers-btn">
+                        <button class="offers__btn offers__btn_sand btn">Get In Touch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shadow shadow_offers-item">
+            <div class="offers__item">
+                <picture tabindex="0">
+                    <source srcset="images/offer-3.webp" type="image/webp" class="offers__img">
+                    <img src="images/offer-3.png" alt="" class="offers__img">
+                </picture>
+                <div class="offers__desc">
+                    <p tabindex="0" class="offers__title title-4">Basic</p>
+                    <p tabindex="0" class="offers__text desc-3 desc-3_reg">Basic Beauty Package</p>
+                    <div class="offers__pluses">
+                        <ul class="offers__list">
+                            <li tabindex="0" class="offers__list-item desc-3 desc-3_reg">Customized facial treatment</li>
+                            <li tabindex="0" class="offers__list-item desc-3 desc-3_reg">Makeup application for special occasions</li>
+                            <li tabindex="0" class="offers__list-item desc-3 desc-3_reg">Access to recommended skincare products</li>
+                            
+                        </ul>
+                        <p tabindex="0" class="offers__ideal desc-3 desc-3_reg"><span class="offers__ideal-span desc-3">Ideal for:</span> Individuals seeking occasional skincare and makeup services.</p>
+                    </div>
+                    <p tabindex="0" class="offers__price title-2">$75</p>
+                    <div class="shadow shadow_btn shadow__offers-btn">
+                        <button class="offers__btn btn">Get In Touch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+   </section>
+   <section class="seventh-section">
+    <div class="seventh-section__main container">
+        <h6 tabindex="0" class="title-2 seventh-section__title">Questions? We Have Answers.</h6>
+        <p tabindex="0" class="seventh-section__text desc-1 desc-1_reg">Explore our FAQ section for quick answers to common inquiries about our services, appointments, and more. Your beauty journey begins here.</p>
+        <div class="faq">
+            <div class="shadow shadow_faq">
+                <div aria-expanded="false" tabindex="0" class="faq__item">
+                    <div class="faq__top">
+                        <p tabindex="0" class="faq__title desc-2">What services do you offer at LuxeDerm?</p>
+                        <div class="faq__icon">
+                            <span class="faq__span faq__span_1"></span>
+                            <span class="faq__span faq__span_2"></span>
+                        </div>
+                    </div>
+                    <div class="faq__bottom">
+                        <p tabindex="0" class="faq__text desc-3 desc-3_reg">Yes, we offer consultations to assess your specific needs and recommend personalized treatments and skincare routines.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow shadow_faq">
+                <div aria-expanded="false" tabindex="0" class="faq__item">
+                    <div class="faq__top">
+                        <p tabindex="0" class="faq__title desc-2">How can I schedule an appointment?</p>
+                        <div class="faq__icon">
+                            <span class="faq__span faq__span_1"></span>
+                            <span class="faq__span faq__span_2"></span>
+                        </div>
+                    </div>
+                    <div class="faq__bottom">
+                        <p tabindex="0" class="faq__text desc-3 desc-3_reg">Yes, we offer consultations to assess your specific needs and recommend personalized treatments and skincare routines.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow shadow_faq">
+                <div aria-expanded="false" tabindex="0" class="faq__item">
+                    <div class="faq__top">
+                        <p tabindex="0" class="faq__title desc-2">Do you offer consultations before treatments?</p>
+                        <div class="faq__icon">
+                            <span class="faq__span faq__span_1"></span>
+                            <span class="faq__span faq__span_2"></span>
+                        </div>
+                    </div>
+                    <div class="faq__bottom">
+                        <p tabindex="0" class="faq__text desc-3 desc-3_reg">Yes, we offer consultations to assess your specific needs and recommend personalized treatments and skincare routines.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow shadow_faq">
+                <div aria-expanded="false" tabindex="0" class="faq__item">
+                    <div class="faq__top">
+                        <p tabindex="0" class="faq__title desc-2">Are your services safe and suitable for all skin types?</p>
+                        <div class="faq__icon">
+                            <span class="faq__span faq__span_1"></span>
+                            <span class="faq__span faq__span_2"></span>
+                        </div>
+                    </div>
+                    <div class="faq__bottom">
+                        <p tabindex="0" class="faq__text desc-3 desc-3_reg">Yes, we offer consultations to assess your specific needs and recommend personalized treatments and skincare routines.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow shadow_faq">
+                <div aria-expanded="false" tabindex="0" class="faq__item">
+                    <div class="faq__top">
+                        <p tabindex="0" class="faq__title desc-2"> What is your cancellation policy?</p>
+                        <div class="faq__icon">
+                            <span class="faq__span faq__span_1"></span>
+                            <span class="faq__span faq__span_2"></span>
+                        </div>
+                    </div>
+                    <div class="faq__bottom">
+                        <p tabindex="0" class="faq__text desc-3 desc-3_reg">Yes, we offer consultations to assess your specific needs and recommend personalized treatments and skincare routines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <section class="eight-section" id="blog">
+    <div class="eight-section__main container">
+        <div class="eight-section__desc">
+            <h6 tabindex="0" class="title-2 eight-section__title">Beauty and Wellness Insights</h6>
+            <div class="shadow shadow_btn">
+                <button class="eight-section__btn btn">See All</button>
+            </div>
+        </div>
+        <div class="articles">
+            <div class="articles__left">
+                <div class="shadow shadow_articles-item shadow_articles-item_big">
+                    <div class="articles__item articles__item_big">
+                        <div class="articles__pics-big">
+                            <picture tabindex="0">
+                                <source class="articles__item-img" srcset="images/insight-1.webp" type="image/webp">
+                                <img class="articles__item-img" src="images/insight-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="articles__item-desc articles__item-desc_big">
+                            <p tabindex="0" class="articles__item-title articles__item-title_big title-4">Facial Rejuvenation: The Ultimate Guide to Face Massages and Eye Masks</p>
+                            <p tabindex="0" class="articles__item-text desc-1 desc-1_reg">Dive into the world of facial massages and the rejuvenating effects of eye masks. Discover how these skincare rituals can enhance your natural beauty, reduce puffiness, and promote a radiant complexion</p>
+                            <a href="#" class="articles__item-link">Continue Reading</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="articles__right">
+                <div class="shadow shadow_articles-item shadow_articles-item_small">
+                    <div class="articles__item articles__item_small">
+                        <div class="articles__item-pics">
+                            <picture tabindex="0">
+                                <source class="articles__item-img articles__item-img_small" srcset="images/insight-2.webp" type="image/webp">
+                                <img class="articles__item-img articles__item-img_small" src="images/insight-2.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="articles__item-desc articles__item-desc_small">
+                            <p tabindex="0" class="articles__item-title title-5">Pamper Your Hands: The Art of Relaxing Hand Massages</p>
+                            <p tabindex="0" class="articles__item-text articles__item-text_small desc-3 desc-3_reg">Dive into the world of facial massages and the rejuvenating effects of eye masks. Discover how these skincare rituals can enhance your natural beauty, reduce puffiness, and promote a radiant complexion</p>
+                            <a href="#" class="articles__item-link articles__item-link_small">Continue Reading</a>
+                        </div>
+                    </div>
+                    </div>
+                <div class="shadow shadow_articles-item shadow_articles-item_small">
+                    <div class="articles__item articles__item_small">
+                        <div class="articles__item-pics">
+                            <picture tabindex="0">
+                                <source class="articles__item-img articles__item-img_small" srcset="images/insight-3.webp" type="image/webp">
+                                <img class="articles__item-img articles__item-img_small" src="images/insight-3.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="articles__item-desc articles__item-desc_small">
+                            <p tabindex="0" class="articles__item-title title-5">Hair Rejuvenation: Unlock the Secrets to Lustrous Locks</p>
+                            <p tabindex="0" class="articles__item-text articles__item-text_small desc-3 desc-3_reg">Dive into the world of hair treatment and discover effective ways to revitalize and maintain your hair's natural beauty. From deep conditioning to scalp massage, we'll guide you to the perfect hair care routine.</p>
+                            <a href="#" class="articles__item-link articles__item-link_small">Continue Reading</a>
+                        </div>
+                    </div>
+                    </div>
+                <div class="shadow shadow_articles-item shadow_articles-item_small">
+                    <div class="articles__item articles__item_small">
+                        <div class="articles__item-pics">
+                            <picture tabindex="0">
+                                <source class="articles__item-img articles__item-img_small" srcset="images/insight-4.webp" type="image/webp">
+                                <img class="articles__item-img articles__item-img_small" src="images/insight-4.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="articles__item-desc articles__item-desc_small">
+                            <p tabindex="0" class="articles__item-title title-5">Total Body Bliss: The Healing Power of Body Massages</p>
+                            <p tabindex="0" class="articles__item-text articles__item-text_small desc-3 desc-3_reg">Embark on a journey of relaxation and rejuvenation with body massages. Uncover the physical and mental benefits of this timeless practice, from relieving muscle tension to reducing stress.</p>
+                            <a href="#" class="articles__item-link articles__item-link_small">Continue Reading</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+   </section>
+   
+   <section class="ninth-section" id="contact">
+    <div class="modal modal__hidden">
+        <div class="modal__content">
+            <button class="modal__btn">&#10006;</button>
+            <p class="modal__text">Subscription completed successfully</p>
+        </div>
+    </div>
+    <div class="ninth-section__main container">
+        <h6 tabindex="0" class="title-3 ninth-section__title">Subscribe To Receive Exclusive 
+            News and Offers</h6>
+        <p tabindex="0" class="ninth-section__text desc-1 desc-1_reg">Be the first to know about the biggest stories as they break</p>
+            <div class="shadow shadow_ninth-section-form">
+                <form  action="#" method="POST" class="form ninth-section__form">
+                    
+                    <input required data-validate-field="email" type="email" class="form__input desc-3 desc-3_reg" placeholder="Your email adress">
+                    <button class="form__btn btn btn_form" type="submit">&rarr;</button>
+                    
+                </form>
+            </div>
+            <p tabindex="0" class="ninth-section__policy desc-4 desc-4_reg">By clicking Subscribe, you indicate that you agree to Hypnosis Terms and Conditions and Data Use Privacy Policy</p>
+            
+        </div>
+   </section>
+   <footer class="footer">
+        <div class="footer__main container">
+            <div class="footer__top">
+                <a href="index.html" class="footer__logo logo">LuxeDerm</a>
+                <ul class="footer__nav nav__list">
+                    <li class="nav__item footer__nav-item desc-2 desc-2_reg"><a class="nav__item-link" href="#services">Services</a></li>
+                    <li class="nav__item footer__nav-item desc-2 desc-2_reg"><a class="nav__item-link" href="#blog">Blog</a></li>
+                    <li class="nav__item footer__nav-item desc-2 desc-2_reg"><a class="nav__item-link" href="#contact">Contact Us</a></li>
+                    <li class="nav__item footer__nav-item desc-2 desc-2_reg"><a class="nav__item-link" href="#about">About Us</a></li>
+                </ul>
+    
+            </div>
+            <div class="footer__bottom">
+                <p tabindex="0" class="footer__bottom-text desc-3 desc-3_reg">© 2023 Pigment, Agency. All rights reserved.</p>
+                <div class="footer__icons">
+                    <a href="https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%BC%D0%BC" class="footer__icon-link"><img src="icons/insta.svg" alt="" class="footer__icon"></a>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D1%86%D0%BE" class="footer__icon-link"><img src="icons/facebook (2).svg" alt="" class="footer__icon"></a>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D0%BD%D1%8F%D1%8F_%D0%BF%D1%82%D0%B8%D1%86%D0%B0" class="footer__icon-link"><img src="icons/twitter (1).svg" alt="" class="footer__icon"></a>
+                </div>
+            </div>
+        </div>
+   </footer>
+    
+    
+</body>
+</html>
