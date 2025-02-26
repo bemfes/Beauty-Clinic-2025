@@ -149,15 +149,15 @@ function sliderBig() {
     const widthSectionNumber = Number(compWidthSection.slice(0, -2))
     
     sliderItem.forEach(item => {
-        item.style.width = compWidthSection
+        item.style.width = `${widthSectionNumber - 7}px`
     })
     sliderImg.forEach(img => {
-        img.style.width = `${widthSectionNumber - 3.487}px`
+        img.style.width = `${widthSectionNumber - 10.487}px`
     })
 
     function goToSlide(slide) {
         sliderItem.forEach(item => {
-            item.style.transform = `translateX(${slide * -widthSectionNumber}px)`
+            item.style.transform = `translateX(${slide * (-widthSectionNumber + 7)}px)`
         })
         
     }
@@ -266,61 +266,71 @@ window.addEventListener('resize', sliderBig)
 const swiperBox = document.querySelector('.swiper-container');
 
 if (swiperBox) {
-    const swiper = new Swiper(swiperBox, {
-        breakpoints: {
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            575: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            
-            1050: {
-              slidesPerView: 3,
-              spaceBetween: 20,
+    try {
+        const swiper = new Swiper(swiperBox, {
+            breakpoints: {
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                575: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                
+                1050: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                  },
               },
-          },
-        loop: true,
-        
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    })
+            loop: true,
+            
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        })
+
+    } catch {
+
+    }
 }
 
 const gifBox = document.querySelector('.gif__box')
 const gifOverlay = document.querySelector('.overlay__send')
 
-new window.JustValidate('.ninth-section__form', {
-    colorWrong: "#18181B",
-    messages: {
-      email: {
-        email: "Enter the correct email",
-        required: "Enter an email",
-      },
-  
-    },
-    submitHandler: function(thisForm) {
-      gifBox.classList.remove('gif__box_hidden')
-      gifOverlay.classList.add('overlay_gif-opened')
-      let formData = new FormData(thisForm);
-  
-      let xhr = new XMLHttpRequest();
-  
+try {
+    new window.JustValidate('.ninth-section__form', {
+        colorWrong: "#18181B",
+        messages: {
+          email: {
+            email: "Enter the correct email",
+            required: "Enter an email",
+          },
       
-      xhr.open('POST', 'mail.php', true);
-      xhr.send(formData);
-  
-      thisForm.reset();
-      gifBox.classList.add('gif__box_hidden')
-      gifOverlay.classList.remove('overlay_gif-opened')
-      modal.classList.remove('modal__hidden')
-      overlay.classList.add('overlay_opened')
-    }
-  });
+        },
+        submitHandler: function(thisForm) {
+          gifBox.classList.remove('gif__box_hidden')
+          gifOverlay.classList.add('overlay_gif-opened')
+          let formData = new FormData(thisForm);
+      
+          let xhr = new XMLHttpRequest();
+      
+          
+          xhr.open('POST', 'mail.php', true);
+          xhr.send(formData);
+      
+          thisForm.reset();
+          gifBox.classList.add('gif__box_hidden')
+          gifOverlay.classList.remove('overlay_gif-opened')
+          modal.classList.remove('modal__hidden')
+          overlay.classList.add('overlay_opened')
+        }
+      });
+
+} catch {
+
+}
 
 const modalBtn = document.querySelector('.modal__btn')
 const modal = document.querySelector('.modal')
