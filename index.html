@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" media="print" onload="this.media='all'" href="css/simplebar.min.css">
-    <link rel="stylesheet" media="print" onload="this.media='all'" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css//preloader.css" />
+    <link rel="stylesheet" media="print" onload="this.media='all'; this.onload = null" href="css/simplebar.min.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'; this.onload = null" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'; this.onload = null" href="css/style.min.css">
     <script defer src="js/simplebar.min.js"></script>
     <script defer src="js/just-validate.min.js"></script>
     <script defer src="js/swiper-bundle.min.js"></script>
@@ -42,13 +43,17 @@
     
 </head>
 <body class="no-scroll">
+    <noscript class="noscript">
+        <p class="noscript__text">
+            Похоже, ваш браузер не поддерживает JavaScript. Для работы сайта, пожалуйста, включите поддержку JavaScript в 
+            настройках вашего браузера или откройте сайт в другом браузере, который поддерживает JavaScript.
+        </p>
+    </noscript>
     <div class="preloader">
         <div class="preloader__content">
             <div class="preloader__circle"></div>
         </div>
     </div>
-
-
     <div class="overlay__send"></div>
     <div class="gif__box gif__box_hidden">
         <img loading="lazy" src="images/loading-gif.gif" class="gif" alt="loading gif">
