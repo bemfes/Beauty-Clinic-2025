@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/simplebar.min.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="css/simplebar.min.css">
     <link rel="stylesheet" media="print" onload="this.media='all'" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <script defer src="js/simplebar.min.js"></script>
@@ -51,7 +51,7 @@
 
     <div class="overlay__send"></div>
     <div class="gif__box gif__box_hidden">
-        <img src="images/loading-gif.gif" class="gif" alt="loading gif">
+        <img loading="lazy" src="images/loading-gif.gif" class="gif" alt="loading gif">
     </div>
     <div class="overlay"></div>
     <div class="search__box search__box_hidden">
