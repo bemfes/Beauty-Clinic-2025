@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css//preloader.css" />
     <link rel="stylesheet" media="print" onload="this.media='all'; this.onload = null" href="css/simplebar.min.css">
     <link rel="stylesheet" media="print" onload="this.media='all'; this.onload = null" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" media="print" onload="this.media='all'; this.onload = null" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link fetchpriority="high" rel="preload" href="fonts/EBGaramond-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
     <script defer src="js/simplebar.min.js"></script>
     <script defer src="js/just-validate.min.js"></script>
     <script defer src="js/swiper-bundle.min.js"></script>
@@ -68,9 +69,9 @@
         <div class="first-section__main container-first">
             <div class="first-section__left">
                 <div class="first-section__icons">
-                    <a href="https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%BC%D0%BC" class="first-section__icon-link"><img loading="lazy" src="icons/insta.svg" alt="instagram link" class="first-section__icon"></a>
-                    <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D0%BD%D1%8F%D1%8F_%D0%BF%D1%82%D0%B8%D1%86%D0%B0" class="first-section__icon-link"><img loading="lazy" src="icons/twitter (1).svg" alt="twitter link" class="first-section__icon"></a>
-                    <a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D1%86%D0%BE" class="first-section__icon-link"><img loading="lazy" src="icons/facebook (2).svg" alt="facebook link" class="first-section__icon"></a>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%BC%D0%BC" class="first-section__icon-link"><img fetchpriority="high" src="icons/insta.svg" alt="instagram link" class="first-section__icon"></a>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D0%BD%D1%8F%D1%8F_%D0%BF%D1%82%D0%B8%D1%86%D0%B0" class="first-section__icon-link"><img fetchpriority="high" src="icons/twitter (1).svg" alt="twitter link" class="first-section__icon"></a>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D1%86%D0%BE" class="first-section__icon-link"><img fetchpriority="high" src="icons/facebook (2).svg" alt="facebook link" class="first-section__icon"></a>
                 </div>
             </div>
             <div class="first-section__right ">
@@ -105,7 +106,7 @@
                                 </ul>
                             </nav>
                             <div class="first-section__search-border">
-                                <button class="search__btn"><img loading="lazy" src="icons/search-btn.svg" alt="search icon" class="first-section__search search"></button>
+                                <button class="search__btn"><img fetchpriority="high" src="icons/search-btn.svg" alt="search icon" class="first-section__search search"></button>
                             </div>
                         </header>
                         <div class="first-section__right-top-main">
@@ -115,8 +116,8 @@
                                     Confidence</h1>
                             </div>
                             <div class="first-section__stars">
-                                <img loading="lazy" class="first-section__stars-big" src="icons/big-star.svg" alt="big star">
-                                <img loading="lazy" class="first-section__stars-small" src="icons/small-star.svg" alt="small star">
+                                <img class="first-section__stars-big" src="icons/big-star.svg" alt="big star">
+                                <img class="first-section__stars-small" src="icons/small-star.svg" alt="small star">
                             </div>
                         </div>
                     </div>
@@ -125,7 +126,7 @@
                     <div class="first-section__right-bottom-left">
                         <picture>
                             <source srcset="images/girl-first.webp" class="first-section__img-small" type="image/webp">
-                            <img loading="lazy" src="images/girl-first.png" alt="girl" class="first-section__img-small">
+                            <img src="images/girl-first.png" alt="girl" class="first-section__img-small">
                         </picture>
                         <p tabindex="0" class="first-section__text">Skin care isn't a luxury; it's your daily commitment to nurturing your unique beauty.</p>
                         <div class="shadow shadow_btn shadow_btn-first-section">
@@ -136,25 +137,25 @@
                                 <div class="shadow shadow_circle">
                                     <picture tabindex="0">
                                         <source srcset="images/client-1.webp" class="clients__img" type="image/webp">
-                                        <img loading="lazy" src="images/client-1.png" alt="client" class="clients__img">
+                                        <img fetchpriority="high" src="images/client-1.png" alt="client" class="clients__img">
                                     </picture>
                                 </div>
                                 <div class="shadow shadow_circle shadow_circle-client-2">
                                     <picture tabindex="0">
                                         <source srcset="images/client-2.webp" class="clients__img" type="image/webp">
-                                        <img loading="lazy" src="images/client-2.png" alt="client" class="clients__img">
+                                        <img fetchpriority="high" src="images/client-2.png" alt="client" class="clients__img">
                                     </picture>
                                 </div>
                                 <div class="shadow shadow_circle shadow_circle-client-3">
                                     <picture tabindex="0">
                                         <source srcset="images/client-3.webp" class="clients__img" type="image/webp">
-                                        <img loading="lazy" src="images/client-3.png" alt="client" class="clients__img">
+                                        <img fetchpriority="high" src="images/client-3.png" alt="client" class="clients__img">
                                     </picture>
                                 </div>
                                 <div class="shadow shadow_circle shadow_circle-client-4">
                                     <picture tabindex="0">
                                         <source srcset="images/client-1.webp" class="clients__img" type="image/webp">
-                                        <img loading="lazy" src="images/client-1.png" alt="client" class="clients__img">
+                                        <img fetchpriority="high" src="images/client-1.png" alt="client" class="clients__img">
                                     </picture>
                                 </div>
                             </div>
@@ -164,7 +165,7 @@
                     <div class="first-section__right-bottom-right">
                         <picture>
                             <source srcset="images/girl-first.webp" class="first-section__img" type="image/webp">
-                            <img loading="lazy" src="images/girl-first.png" alt="girl" class="first-section__img">
+                            <img src="images/girl-first.png" alt="girl" class="first-section__img">
                         </picture>
                     </div>
                 </div>

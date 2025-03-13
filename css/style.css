@@ -428,14 +428,14 @@ ul {
 
 @font-face {
   font-family: "Garamond Bold";
-  src: url("../fonts/EBGaramond-Bold.ttf");
+  src: url("../fonts/EBGaramond-Bold.woff");
   font-display: swap;
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
   font-family: "Garamond Regular";
-  src: url("../fonts/EBGaramond-Regular.ttf");
+  src: url("../fonts/EBGaramond-Regular.woff");
   font-display: swap;
   font-style: normal;
   font-weight: 400;
