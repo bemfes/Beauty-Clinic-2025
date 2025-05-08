@@ -85,6 +85,7 @@ faqItems.forEach(item => {
     const faqIcon = item.querySelector('.faq__icon')
     const faqSpanFirst = item.querySelector('.faq__span_1')
     const faqSpans = item.querySelectorAll('.faq__span')
+    const faqAnswer = item.querySelector('.faq__text')
     item.addEventListener('click', () => {
         if (faqDesc.style.maxHeight) {
             item.classList.remove('faq__item_click')
@@ -95,6 +96,8 @@ faqItems.forEach(item => {
             })
             faqDesc.style.maxHeight = null
             item.setAttribute('aria-expanded', 'false')
+            faqAnswer.removeAttribute('tabindex', '0')
+            faqIcon.setAttribute('aria-label', 'expand answer')
         } else {
             item.classList.add('faq__item_click')
             faqIcon.classList.add('faq__icon_click')
@@ -104,6 +107,8 @@ faqItems.forEach(item => {
             })
             faqDesc.style.maxHeight = faqDesc.scrollHeight + "px"
             item.setAttribute('aria-expanded', 'true')
+            faqAnswer.setAttribute('tabindex', '0')
+            faqIcon.setAttribute('aria-label', 'roll up answer')
         }
         
     })
@@ -118,6 +123,8 @@ faqItems.forEach(item => {
                 })
                 faqDesc.style.maxHeight = null
                 item.setAttribute('aria-expanded', 'false')
+                faqAnswer.removeAttribute('tabindex', '0')
+                faqIcon.setAttribute('aria-label', 'expand answer')
             } else {
                 item.classList.add('faq__item_click')
                 faqIcon.classList.add('faq__icon_click')
@@ -127,9 +134,10 @@ faqItems.forEach(item => {
                 })
                 faqDesc.style.maxHeight = faqDesc.scrollHeight + "px"
                 item.setAttribute('aria-expanded', 'true')
+                faqAnswer.setAttribute('tabindex', '0')
+                faqIcon.setAttribute('aria-label', 'roll up answer')
             }
         }
-        console.log('focus');
     })
 })
 

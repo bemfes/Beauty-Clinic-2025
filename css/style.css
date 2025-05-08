@@ -533,6 +533,12 @@ body {
     width: 1800px !important;
     margin: 0 auto;
   }
+  .ticker {
+    width: 1800px;
+    margin: 0 auto;
+    border-left: 3px solid rgb(52, 58, 50);
+    border-right: 3px solid rgb(52, 58, 50);
+  }
 }
 
 .nav {
