@@ -320,13 +320,7 @@ try {
         submitHandler: function(thisForm) {
           gifBox.classList.remove('gif__box_hidden')
           gifOverlay.classList.add('overlay_gif-opened')
-          let formData = new FormData(thisForm);
-      
-          let xhr = new XMLHttpRequest();
-      
           
-          xhr.open('POST', 'mail.php', true);
-          xhr.send(formData);
       
           thisForm.reset();
           gifBox.classList.add('gif__box_hidden')
